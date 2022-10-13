@@ -315,7 +315,7 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_CHAMBER 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
@@ -528,9 +528,9 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
-#define Y_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
-#define Z_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
+#define X_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define Y_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define Z_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 #define X_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
@@ -1424,7 +1424,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
@@ -1527,7 +1527,7 @@
 //
 // Note: Usually sold with a white PCB.
 //
-//#define REPRAP_DISCOUNT_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // ULTIMAKER Controller.
